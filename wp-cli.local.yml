@@ -1,0 +1,17 @@
+path: public/wordpress
+
+core config:
+    dbname: wordpress
+	dbuser: root
+	dbpass: root
+    dbhost: 127.0.0.1
+
+ssh:
+  vagrant:
+    # The %pseudotty% placeholder gets replaced with -t or -T depending on whether you're piping output
+    # The %cmd% placeholder is replaced with the originally-invoked WP-CLI command
+    cmd: vagrant ssh-config > /tmp/vagrant_ssh_config && ssh -q %pseudotty% -F /tmp/vagrant_ssh_config default %cmd%
+    # Passed to WP-CLI on the remote server via --url
+    url: 192.168.33.20
+    # We cd to this path on the remote server before running WP-CLI
+    path: /vagrant/ferner-wp/public/wordpress/
