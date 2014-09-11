@@ -20,7 +20,7 @@ define('APP_ENV', 'development');
 /** Require environment-specific configuration */
 
 
-define('WP_HOME', 'http://192.168.1.75:8080/ferner-wp/public');
+define('WP_HOME', 'http://127.0.0.1:8080/sites/robertsradio.de/public');
 define('WP_SITEURL', WP_HOME . '/wordpress/');
 
 define('WP_CONTENT_DIR', APP_ROOT . '/public/content');
@@ -30,7 +30,7 @@ define('WP_DEBUG', true);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'db542550821');
 
 /** Ersetze username_here mit deinem MySQL-Datenbank-Benutzernamen */
 define('DB_USER', 'root');
