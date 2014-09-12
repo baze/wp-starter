@@ -13,9 +13,6 @@
 [submodule "public/content/plugins/custom-post-type-ui"]
 	path = public/content/plugins/custom-post-type-ui
 	url = git@github.com:wp-plugins/custom-post-type-ui.git
-[submodule "public/content/plugins/wp-plugin-dependencies"]
-	path = public/content/plugins/wp-plugin-dependencies
-	url = git@github.com:wp-plugins/wp-plugin-dependencies.git
 [submodule "public/content/plugins/polylang"]
 	path = public/content/plugins/polylang
 	url = git@github.com:wp-plugins/polylang.git
@@ -58,3 +55,6 @@
 [submodule "public/content/plugins/timber"]
 	path = public/content/plugins/timber
 	url = git@github.com:jarednova/timber.git
+[submodule "public/content/plugins/wp-plugin-dependencies"]
+	path = public/content/plugins/wp-plugin-dependencies
+	url = git@github.com:x-team/wp-plugin-dependencies.git
