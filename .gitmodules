@@ -4,3 +4,6 @@
 [submodule "public/content/plugins/timber"]
 	path = public/content/plugins/timber
 	url = git@github.com:jarednova/timber.git
+[submodule "public/content/plugins/wp-plugin-dependencies"]
+	path = public/content/plugins/wp-plugin-dependencies
+	url = git@github.com:x-team/wp-plugin-dependencies.git
