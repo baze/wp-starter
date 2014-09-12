@@ -13,9 +13,6 @@
 [submodule "public/content/plugins/custom-post-type-ui"]
 	path = public/content/plugins/custom-post-type-ui
 	url = git@github.com:wp-plugins/custom-post-type-ui.git
-[submodule "public/content/plugins/timber"]
-	path = public/content/plugins/timber
-	url = git@github.com:wp-plugins/timber.git
 [submodule "public/content/plugins/wp-plugin-dependencies"]
 	path = public/content/plugins/wp-plugin-dependencies
 	url = git@github.com:wp-plugins/wp-plugin-dependencies.git
@@ -58,3 +55,6 @@
 [submodule "public/content/plugins/mappress-google-maps-for-wordpress"]
 	path = public/content/plugins/mappress-google-maps-for-wordpress
 	url = git@github.com:wp-plugins/mappress-google-maps-for-wordpress.git
+[submodule "public/content/plugins/timber"]
+	path = public/content/plugins/timber
+	url = git@github.com:jarednova/timber.git
