@@ -55,6 +55,3 @@
 [submodule "public/content/plugins/wp-ban"]
 	path = public/content/plugins/wp-ban
 	url = git@github.com:wp-plugins/wp-ban.git
-[submodule "public/content/themes/wp-starter-theme"]
-	path = public/content/themes/wp-starter-theme
-	url = git@github.com:baze/wp-starter-theme.git
