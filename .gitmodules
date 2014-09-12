@@ -1,12 +1,57 @@
 [submodule "public/wordpress"]
 	path = public/wordpress
 	url = https://github.com/WordPress/WordPress.git
-[submodule "public/content/plugins/timber"]
-	path = public/content/plugins/timber
-	url = git@github.com:jarednova/timber.git
-[submodule "public/content/plugins/wp-plugin-dependencies"]
-	path = public/content/plugins/wp-plugin-dependencies
-	url = git@github.com:x-team/wp-plugin-dependencies.git
+[submodule "public/content/plugins/contact-form-7"]
+	path = public/content/plugins/contact-form-7
+	url = git@github.com:wp-plugins/contact-form-7.git
+[submodule "public/content/plugins/contact-form-7-honeypot"]
+	path = public/content/plugins/contact-form-7-honeypot
+	url = git@github.com:wp-plugins/contact-form-7-honeypot.git
+[submodule "public/content/plugins/advanced-custom-fields"]
+	path = public/content/plugins/advanced-custom-fields
+	url = git@github.com:wp-plugins/advanced-custom-fields.git
 [submodule "public/content/plugins/custom-post-type-ui"]
 	path = public/content/plugins/custom-post-type-ui
-	url = git@github.com:WebDevStudios/custom-post-type-ui.git
+	url = git@github.com:wp-plugins/custom-post-type-ui.git
+[submodule "public/content/plugins/timber"]
+	path = public/content/plugins/timber
+	url = git@github.com:wp-plugins/timber.git
+[submodule "public/content/plugins/wp-plugin-dependencies"]
+	path = public/content/plugins/wp-plugin-dependencies
+	url = git@github.com:wp-plugins/wp-plugin-dependencies.git
+[submodule "public/content/plugins/polylang"]
+	path = public/content/plugins/polylang
+	url = git@github.com:wp-plugins/polylang.git
+[submodule "public/content/plugins/regenerate-thumbnails"]
+	path = public/content/plugins/regenerate-thumbnails
+	url = git@github.com:wp-plugins/regenerate-thumbnails.git
+[submodule "public/content/plugins/reveal-ids-for-wp-admin-25"]
+	path = public/content/plugins/reveal-ids-for-wp-admin-25
+	url = git@github.com:wp-plugins/reveal-ids-for-wp-admin-25.git
+[submodule "public/content/plugins/taxonomy-terms-order"]
+	path = public/content/plugins/taxonomy-terms-order
+	url = git@github.com:wp-plugins/taxonomy-terms-order.git
+[submodule "public/content/plugins/wordpress-seo"]
+	path = public/content/plugins/wordpress-seo
+	url = git@github.com:wp-plugins/wordpress-seo.git
+[submodule "public/content/plugins/AssetsMinify"]
+	path = public/content/plugins/AssetsMinify
+	url = git@github.com:wp-plugins/AssetsMinify.git
+[submodule "public/content/plugins/mappress-google-maps-for-wordpress"]
+	path = public/content/plugins/mappress-google-maps-for-wordpress
+	url = git@github.com:wp-plugins/mappress-google-maps-for-wordpress.git
+[submodule "public/content/plugins/redirection"]
+	path = public/content/plugins/redirection
+	url = git@github.com:wp-plugins/redirection.git
+[submodule "public/content/plugins/wp-html-compression"]
+	path = public/content/plugins/wp-html-compression
+	url = git@github.com:wp-plugins/wp-html-compression.git
+[submodule "public/content/plugins/stream"]
+	path = public/content/plugins/stream
+	url = git@github.com:wp-plugins/stream.git
+[submodule "public/content/plugins/ewww-image-optimizer"]
+	path = public/content/plugins/ewww-image-optimizer
+	url = git@github.com:wp-plugins/ewww-image-optimizer.git
+[submodule "public/content/plugins/wp-ban"]
+	path = public/content/plugins/wp-ban
+	url = git@github.com:wp-plugins/wp-ban.git
