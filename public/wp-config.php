@@ -15,7 +15,7 @@
 define('APP_ROOT', dirname(__DIR__));
 // define('APP_ENV', getenv('APPLICATION_ENV'));
 
-define('APP_ENV', 'development');
+//define('APP_ENV', 'development');
 
 /** Require environment-specific configuration */
 
@@ -26,7 +26,7 @@ define('WP_SITEURL', WP_HOME . '/wordpress/');
 define('WP_CONTENT_DIR', APP_ROOT . '/public/content');
 define('WP_CONTENT_URL', WP_HOME . '/content');
 
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
