@@ -2,3 +2,7 @@
 
 public/content/ewww
 public/content/uploads
+
+# non-free plugins
+public/content/plugins/acf-options-page
+public/content/plugins/acf-repeater
