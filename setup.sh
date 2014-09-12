@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Clone Repo
-# ----------
-git clone --recursive git@github.com:baze/wp-starter.git .
-
 # ACF non-free plugins
 # ----------
 
