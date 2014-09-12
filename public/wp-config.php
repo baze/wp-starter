@@ -1,7 +1,5 @@
 <?php
 
-//include dirname(__DIR__) . '/config/wordpress.php';
-
 /**
  * The base configurations of the WordPress.
  *
@@ -39,7 +37,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'root');
 
 /** Ersetze localhost mit der MySQL-Serveradresse */
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', '192.168.1.55:8889');
 
 /** Der Datenbankzeichensatz der beim Erstellen der Datenbanktabellen verwendet werden soll */
 define('DB_CHARSET', 'utf8');
@@ -64,9 +62,6 @@ define('AUTH_SALT', '.+-WP/mw-xkhrR!{G-hU#lYx]ei`IX*:*G5|h/lm U@!bYqw%rO}n6S*/%A
 define('SECURE_AUTH_SALT', '9];f#YY<BhLnBKlNuIt+Bu*PZ+?SP6dVW]N.Uak{W>Jt>)%95n[Lv<3ZOwkHI_5S');
 define('LOGGED_IN_SALT', '|^@5!S[E,!m6ZpSz{=u?|Zx>Z|;2^.sPK?PC6;.NE2[h|Xf098M~7kOz$yoH?0Vl');
 define('NONCE_SALT', 'Hx5d+Vz=&4/o0t8qPTW i#!{.Q Ytp1+K(3N,)c*[j+N,Zh[MTiBlXl5C&N.t2mz');
-
-
-// require APP_ROOT . '/config/env/development.php';
 
 /** Require Composer autoload file */
 // require APP_ROOT . '/vendor/autoload.php';

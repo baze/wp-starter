@@ -37,9 +37,6 @@
 [submodule "public/content/plugins/AssetsMinify"]
 	path = public/content/plugins/AssetsMinify
 	url = git@github.com:wp-plugins/AssetsMinify.git
-[submodule "public/content/plugins/mappress-google-maps-for-wordpress"]
-	path = public/content/plugins/mappress-google-maps-for-wordpress
-	url = git@github.com:wp-plugins/mappress-google-maps-for-wordpress.git
 [submodule "public/content/plugins/redirection"]
 	path = public/content/plugins/redirection
 	url = git@github.com:wp-plugins/redirection.git

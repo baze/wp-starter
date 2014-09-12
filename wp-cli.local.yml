@@ -1,10 +1,17 @@
 path: public/wordpress
 
+core install:
+  title: WordPress Starter
+  url: http://wp-starter.dev
+  admin_user: starter-admin
+  admin_password: starter-password
+  admin_email: starter-admin@euw.de
+
 core config:
     dbname: wp-starter
 	dbuser: root
 	dbpass: root
-    dbhost: 127.0.0.1
+    dbhost: 192.168.1.55:8889
 
 ssh:
   vagrant:
