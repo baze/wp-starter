@@ -28,9 +28,6 @@
 [submodule "public/content/plugins/wordpress-seo"]
 	path = public/content/plugins/wordpress-seo
 	url = git@github.com:wp-plugins/wordpress-seo.git
-[submodule "public/content/plugins/AssetsMinify"]
-	path = public/content/plugins/AssetsMinify
-	url = git@github.com:wp-plugins/AssetsMinify.git
 [submodule "public/content/plugins/redirection"]
 	path = public/content/plugins/redirection
 	url = git@github.com:wp-plugins/redirection.git
