@@ -1,5 +1,10 @@
 # WP Starter
 
+## Requirements
+
+* wp-cli
+* Github Account with SSH Access on your machine
+
 ## Installation
 
 ```bash
