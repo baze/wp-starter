@@ -1,5 +1,7 @@
 #!/bin/bash
 
+THEME=wp-starter-theme
+
 # ACF non-free plugins
 # ----------
 
@@ -32,9 +34,13 @@ do
 	wp post create --post_type=page --post_title=$PAGENAME
 done
 
-for PLUGIN in 'contact-form-7' 'contact-form-7-honeypot' 'advanced-custom-fields' 'acf-repeater' 'acf-options-page' 'custom-post-type-ui' 'timber' 'wp-plugin-dependencies' 'polylang' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25' 'taxonomy-terms-order' 'wordpress-seo' 'AssetsMinify' 'mappress-google-maps-for-wordpress' 'redirection' 'wp-html-compression' 'stream' 'ewww-image-optimizer' 'wp-ban' 'defer-cf7-scripts'
+wp plugin activate 'timber'
+cd timber
+composer install
+
+for PLUGIN in 'contact-form-7' 'contact-form-7-honeypot' 'advanced-custom-fields' 'acf-repeater' 'acf-options-page' 'custom-post-type-ui' 'wp-plugin-dependencies' 'polylang' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25' 'taxonomy-terms-order' 'wordpress-seo' 'AssetsMinify' 'mappress-google-maps-for-wordpress' 'redirection' 'wp-html-compression' 'stream' 'ewww-image-optimizer' 'wp-ban' 'defer-cf7-scripts'
 do
     wp plugin activate $PLUGIN
 done
 
-wp theme activate wp-starter-theme
+wp theme activate $THEME
