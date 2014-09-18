@@ -2,6 +2,20 @@
 
 THEME=wp-starter-theme
 
+DB_USER=root
+DB_PASSWORD=root
+DB_HOST=192.168.1.55
+DB_HOST_PORT=8889
+
+DB_NAME=wp_starter
+
+# Set up the database
+# ----------
+mysql --user=$DB_USER --password=$DB_PASSWORD --host=$DB_HOST --port=$DB_HOST_PORT <<QUERY_INPUT
+CREATE DATABASE IF NOT EXISTS $DB_NAME;
+SHOW DATABASES;
+QUERY_INPUT
+
 # WP CLI
 # ----------
 
@@ -18,7 +32,8 @@ done
 
 wp plugin install 'timber-library' --activate
 
-for PLUGIN in 'advanced-custom-fields' 'contact-form-7' 'contact-form-7-honeypot' 'custom-post-type-ui' 'ewww-image-optimizer' 'mappress-google-maps-for-wordpress' 'polylang' 'redirection' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25' 'stream' 'taxonomy-terms-order' 'wordpress-importer' 'wordpress-seo' 'wp-ban' 'wp-html-compression'
+# 'mappress-google-maps-for-wordpress' is currently broken
+for PLUGIN in 'advanced-custom-fields' 'contact-form-7' 'contact-form-7-honeypot' 'custom-post-type-ui' 'ewww-image-optimizer' 'polylang' 'redirection' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25' 'stream' 'taxonomy-terms-order' 'wordpress-importer' 'wordpress-seo' 'wp-ban' 'wp-html-compression'
 do
     wp plugin install $PLUGIN --activate
 done
