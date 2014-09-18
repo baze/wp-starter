@@ -4,7 +4,12 @@ THEME=wp-starter-theme
 
 # WP CLI
 # ----------
+
 wp core install
+
+wp theme activate $THEME
+
+wp rewrite structure '/%year%/%monthnum%/%day%/%postname%/' --hard
 
 for PAGENAME in 'Startseite' 'Kontakt' 'Anfahrt' 'Impressum' 'Datenschutz'
 do
@@ -13,8 +18,7 @@ done
 
 wp plugin install 'timber-library' --activate
 
-for PLUGIN in 'advanced-custom-fields' 'contact-form-7' 'contact-form-7-honeypot' 'custom-post-type-ui' 'ewww-image-optimizer' 'mappress-google-maps-for-wordpress' 'polylang' 'redirection' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25'
-'stream' 'taxonomy-terms-order' 'wordpress-importer' 'wordpress-seo' 'wp-ban' 'wp-html-compression'
+for PLUGIN in 'advanced-custom-fields' 'contact-form-7' 'contact-form-7-honeypot' 'custom-post-type-ui' 'ewww-image-optimizer' 'mappress-google-maps-for-wordpress' 'polylang' 'redirection' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25' 'stream' 'taxonomy-terms-order' 'wordpress-importer' 'wordpress-seo' 'wp-ban' 'wp-html-compression'
 do
     wp plugin install $PLUGIN --activate
 done
@@ -45,5 +49,3 @@ popd
 
 wp plugin activate 'acf-repeater'
 wp plugin activate 'acf-options-page'
-
-wp theme activate $THEME

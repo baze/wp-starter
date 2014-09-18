@@ -13,6 +13,9 @@ core config:
 	dbpass: root
     dbhost: 192.168.1.55:8889
 
+apache_modules:
+  - mod_rewrite
+
 ssh:
   vagrant:
     # The %pseudotty% placeholder gets replaced with -t or -T depending on whether you're piping output
