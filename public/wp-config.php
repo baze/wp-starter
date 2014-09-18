@@ -18,7 +18,7 @@ define('APP_ROOT', dirname(__DIR__));
 /** Require environment-specific configuration */
 
 
-define('WP_HOME', 'http://127.0.0.1:8080/sites/wp-starter/public');
+define('WP_HOME', 'http://192.168.1.99:8080/sites/wp-starter/public');
 define('WP_SITEURL', WP_HOME . '/wordpress/');
 
 define('WP_CONTENT_DIR', APP_ROOT . '/public/content');

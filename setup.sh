@@ -2,6 +2,23 @@
 
 THEME=wp-starter-theme
 
+# WP CLI
+# ----------
+wp core install
+
+for PAGENAME in 'Startseite' 'Kontakt' 'Anfahrt' 'Impressum' 'Datenschutz'
+do
+	wp post create --post_type=page --post_title=$PAGENAME
+done
+
+wp plugin install 'timber-library' --activate
+
+for PLUGIN in 'advanced-custom-fields' 'contact-form-7' 'contact-form-7-honeypot' 'custom-post-type-ui' 'ewww-image-optimizer' 'mappress-google-maps-for-wordpress' 'polylang' 'redirection' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25'
+'stream' 'taxonomy-terms-order' 'wordpress-importer' 'wordpress-seo' 'wp-ban' 'wp-html-compression'
+do
+    wp plugin install $PLUGIN --activate
+done
+
 # ACF non-free plugins
 # ----------
 
@@ -19,28 +36,14 @@ if [ -z "$ACF_OPTIONS_PAGE_KEY" ]; then
    exit 1
 fi
 
-cd public/content/plugins/
+pushd public/content/plugins/
 
 wget -O acf-repeater.zip http://download.advancedcustomfields.com/$ACF_REPEATER_KEY/trunk/ && unzip acf-repeater.zip && rm acf-repeater.zip
-
 wget -O acf-options-page.zip http://download.advancedcustomfields.com/$ACF_OPTIONS_PAGE_KEY/trunk/ && unzip acf-options-page.zip && rm acf-options-page.zip
 
-# WP CLI
-# ----------
-wp core install
+popd
 
-for PAGENAME in 'Startseite' 'Kontakt' 'Anfahrt' 'Impressum' 'Datenschutz'
-do
-	wp post create --post_type=page --post_title=$PAGENAME
-done
-
-wp plugin activate 'timber'
-cd timber
-composer install
-
-for PLUGIN in 'contact-form-7' 'contact-form-7-honeypot' 'advanced-custom-fields' 'acf-repeater' 'acf-options-page' 'custom-post-type-ui' 'wp-plugin-dependencies' 'polylang' 'regenerate-thumbnails' 'reveal-ids-for-wp-admin-25' 'taxonomy-terms-order' 'wordpress-seo' 'AssetsMinify' 'mappress-google-maps-for-wordpress' 'redirection' 'wp-html-compression' 'stream' 'ewww-image-optimizer' 'wp-ban' 'defer-cf7-scripts'
-do
-    wp plugin activate $PLUGIN
-done
+wp plugin activate 'acf-repeater'
+wp plugin activate 'acf-options-page'
 
 wp theme activate $THEME

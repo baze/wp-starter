@@ -3,6 +3,8 @@
 public/content/ewww
 public/content/uploads
 
+public/content/plugins
+
 # non-free plugins
 public/content/plugins/acf-options-page
 public/content/plugins/acf-repeater
