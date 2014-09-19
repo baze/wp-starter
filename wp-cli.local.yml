@@ -8,10 +8,9 @@ core install:
   admin_email: starter-admin@euw.de
 
 core config:
-    dbname: wp-starter
-	dbuser: root
-	dbpass: root
-    dbhost: 192.168.1.55:8889
+	# dbuser: root
+	# dbpass: root
+  # dbhost: 192.168.1.55:8889
 
 apache_modules:
   - mod_rewrite
